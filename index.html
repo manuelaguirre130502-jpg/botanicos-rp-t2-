@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#100607">
+<meta name="description" content="Botánicos RP — Portal ciudadano y PDA policial">
+<title>Botánicos RP | PDA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--red:#ff263b;--red2:#b80f22;--bg:#080708;--panel:#141012;--panel2:#1d1518;--line:#392126;--muted:#a99a9d;--text:#f8f1f2;--green:#72e0a2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}.hidden{display:none!important}.hero{min-height:100svh;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#100607}.hero-bg{position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,4,5,.88),rgba(8,3,5,.3),rgba(5,4,5,.75)),linear-gradient(0deg,#080708 0%,transparent 38%,rgba(10,0,0,.15)),url('assets/botanicos-rp.png') center/cover;transform:scale(1.04);animation:slowzoom 18s ease-in-out infinite alternate}.hero:after{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(255,255,255,.018) 4px 5px)}@keyframes slowzoom{to{transform:scale(1.12)}}@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}@keyframes pulse{50%{box-shadow:0 0 30px #ff263b55}}.hero-content{position:relative;z-index:1;width:min(1050px,92%);text-align:center;padding:40px 0;animation:rise .9s ease both}.eyebrow{font-size:.75rem;letter-spacing:.32em;text-transform:uppercase;color:#ff9aa4;font-weight:800}.hero h1{font-family:'Barlow Condensed',sans-serif;font-size:clamp(4rem,12vw,9rem);line-height:.78;letter-spacing:-.04em;margin:25px 0 18px;text-transform:uppercase;text-shadow:0 4px 0 #650814,0 0 38px #ff263b50}.hero h1 span{display:block;color:var(--red);font-size:.65em;letter-spacing:.18em;margin-top:18px}.hero p{color:#e0d4d7;max-width:650px;margin:24px auto;line-height:1.7}.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:28px}.btn{border:1px solid var(--line);padding:13px 20px;border-radius:8px;background:#20171a;color:white;font-weight:800;transition:.2s;letter-spacing:.02em}.btn:hover{transform:translateY(-2px);border-color:var(--red)}.btn-primary{background:var(--red);border-color:var(--red);color:#fff;box-shadow:0 8px 24px #ff263b2b}.btn-primary:hover{background:#ff4354;box-shadow:0 8px 28px #ff263b55}.btn-small{padding:8px 11px;font-size:.82rem}.site-foot{position:absolute;bottom:20px;left:0;right:0;text-align:center;color:#a99a9d;font-size:.7rem;letter-spacing:.16em;z-index:1}.app{min-height:100vh;background:radial-gradient(ellipse at 80% 0%,#401018 0,transparent 34%),var(--bg)}.topbar{height:72px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,4vw,52px);background:#0b0809ed;position:sticky;top:0;z-index:5;backdrop-filter:blur(12px)}.brand{display:flex;align-items:center;gap:12px;font-family:'Barlow Condensed',sans-serif;font-size:1.4rem;font-weight:900;letter-spacing:.08em}.brand-mark{width:38px;height:38px;object-fit:cover;object-position:center;border-radius:7px;border:1px solid #ff263b}.brand em{font-style:normal;color:var(--red)}.top-actions{display:flex;align-items:center;gap:10px}.wrap{width:min(1240px,92%);margin:0 auto;padding:30px 0 70px}.page-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:24px}.page-head h2{font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.2rem,5vw,3.5rem);line-height:.95;text-transform:uppercase;margin:8px 0}.muted{color:var(--muted)}.tiny{font-size:.78rem}.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px}.card{background:linear-gradient(145deg,#1b1417,#100d0e);border:1px solid var(--line);border-radius:13px;padding:20px;box-shadow:0 15px 40px #0002;min-width:0}.span-12{grid-column:span 12}.span-8{grid-column:span 8}.span-6{grid-column:span 6}.span-4{grid-column:span 4}.card h3{margin:0 0 16px;font-size:1rem}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}.stat{padding:16px;border:1px solid var(--line);border-radius:10px;background:#130e10}.stat b{display:block;font-size:1.8rem;font-family:'Barlow Condensed',sans-serif}.stat span{font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.09em}.field{display:flex;flex-direction:column;gap:7px;margin-bottom:13px}.field label{font-size:.8rem;color:#c7b8bc;font-weight:700}.field input,.field select,.field textarea{width:100%;background:#0b090a;border:1px solid #493038;color:white;padding:12px;border-radius:7px;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--red);box-shadow:0 0 0 3px #ff263b20}.field textarea{min-height:90px;resize:vertical}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 12px}.full{grid-column:1/-1}.notice{border:1px solid #71303b;background:#301017;padding:12px 14px;border-radius:8px;color:#ffd9de;font-size:.85rem;line-height:1.55;margin:12px 0}.success{border-color:#245e43;background:#10271c;color:#bff8d7}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 20px}.tab{border:1px solid var(--line);border-radius:7px;background:#151012;color:#cbbdc0;padding:10px 14px;font-size:.84rem;font-weight:800}.tab.active{background:#4a111b;border-color:var(--red);color:white}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:.86rem}th,td{text-align:left;padding:12px;border-bottom:1px solid #302025;vertical-align:top}th{font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#c6aeb4}td{color:#eee3e6}.pill{display:inline-block;padding:4px 8px;border-radius:99px;font-size:.68rem;font-weight:800;background:#322126;color:#ffdce1;text-transform:uppercase;letter-spacing:.04em}.pill.red{background:#51121d;color:#ffb6bf}.pill.green{background:#123625;color:#a7f4c5}.empty{padding:28px;text-align:center;color:var(--muted);border:1px dashed #493038;border-radius:9px}.photo{width:62px;height:62px;object-fit:cover;border-radius:8px;border:1px solid var(--line);background:#080708}.profile-head{display:flex;align-items:center;gap:18px}.avatar{width:78px;height:78px;border-radius:12px;object-fit:cover;background:#211519;border:1px solid var(--red)}.profile-head h3{font-size:1.4rem;margin:0 0 6px}.list{display:grid;gap:9px}.list-item{border:1px solid #302025;background:#120e10;border-radius:8px;padding:12px;display:flex;justify-content:space-between;gap:12px;align-items:center}.list-item strong{display:block;margin-bottom:4px}.auth-shell{min-height:100vh;display:grid;place-items:center;padding:24px;background:linear-gradient(#080708e8,#080708f2),url('assets/botanicos-rp.png') center/cover fixed}.auth-card{width:min(460px,100%);border:1px solid #57222d;border-radius:16px;padding:28px;background:#100c0ef2;box-shadow:0 24px 80px #0009;animation:rise .45s ease}.auth-card h2{font-family:'Barlow Condensed',sans-serif;font-size:2.6rem;margin:12px 0}.auth-logo{width:100%;height:115px;object-fit:cover;object-position:center 45%;border-radius:9px;border:1px solid var(--line)}.separator{display:flex;gap:12px;align-items:center;color:#77676b;font-size:.75rem;margin:16px 0}.separator:before,.separator:after{content:"";height:1px;background:var(--line);flex:1}.right{display:flex;justify-content:flex-end}.red-text{color:var(--red)}.loading{opacity:.7;pointer-events:none}.fineprint{font-size:.75rem;line-height:1.6;color:#938286}.footerline{border-top:1px solid var(--line);padding-top:18px;margin-top:28px;color:#76676b;font-size:.75rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:800px){.span-8,.span-6,.span-4{grid-column:span 12}.stats{grid-template-columns:repeat(2,1fr)}.page-head{align-items:flex-start;flex-direction:column}.topbar{height:auto;min-height:68px;padding-top:10px;padding-bottom:10px}.top-actions .muted{display:none}.form-grid{grid-template-columns:1fr}.full{grid-column:auto}.hero-bg{background-position:55% center}.brand{font-size:1.1rem}}
+</style>
+</head>
+<body>
+<section id="landing" class="hero">
+ <div class="hero-bg"></div>
+ <div class="hero-content">
+  <div class="eyebrow">Los Santos · Roleplay · Departamento de datos</div>
+  <h1>BOTÁNICOS <span>RP</span></h1>
+  <p>Una ciudad, mil historias. Accede al portal ciudadano o a la PDA de las fuerzas del orden. Tu historia, tus vehículos, tus propiedades y tu expediente en un solo lugar.</p>
+  <div class="actions"><button class="btn btn-primary" onclick="showAuth('login')">INICIAR SESIÓN</button><button class="btn" onclick="showAuth('signup')">CREAR CUENTA</button></div>
+  <div class="actions"><span class="pill">PDA ciudadana</span><span class="pill">Expedientes</span><span class="pill">Acceso policial restringido</span></div>
+ </div><div class="site-foot">BOTÁNICOS RP · SISTEMA DE ROLEPLAY · VERSIÓN WEB</div>
+</section>
+<section id="auth" class="auth-shell hidden">
+ <div class="auth-card">
+  <img class="auth-logo" src="assets/botanicos-rp.png" alt="Imagen de Botánicos RP">
+  <div class="eyebrow" style="margin-top:20px">Portal de acceso</div><h2 id="auth-title">INICIAR SESIÓN</h2>
+  <p class="muted tiny" id="auth-desc">Entra a tu expediente de personaje.</p>
+  <form id="auth-form">
+   <div class="field"><label>Correo electrónico</label><input id="auth-email" type="email" autocomplete="email" required placeholder="tu@correo.com"></div>
+   <div class="field"><label>Contraseña</label><input id="auth-password" type="password" minlength="8" autocomplete="current-password" required placeholder="Mínimo 8 caracteres"></div>
+   <div id="signup-fields" class="hidden">
+    <div class="field"><label>Nombre del personaje (PJ)</label><input id="character-name" maxlength="60" placeholder="Nombre Apellido"></div>
+    <div class="field"><label>Identificador / ID de Discord (opcional)</label><input id="discord-id" maxlength="80" placeholder="ID de Discord"></div>
+   </div>
+   <button class="btn btn-primary" style="width:100%" id="auth-submit" type="submit">ENTRAR</button>
+  </form>
+  <div id="auth-message" class="notice hidden" role="status"></div>
+  <div class="separator">o</div>
+  <button class="btn" style="width:100%" onclick="showLanding()">VOLVER AL INICIO</button>
+  <p class="fineprint">No uses contraseñas del juego ni compartas datos personales sensibles. Los registros requieren Firebase Authentication y Cloud Firestore configurados.</p>
+ </div>
+</section>
+<section id="app" class="app hidden">
+ <header class="topbar"><div class="brand"><img class="brand-mark" src="assets/botanicos-rp.png" alt=""><span>BOTÁNICOS <em>RP</em> / PDA</span></div><div class="top-actions"><span class="muted tiny" id="nav-user"></span><span id="nav-role" class="pill">Ciudadano</span><button class="btn btn-small" onclick="signOut()">Cerrar sesión</button></div></header>
+ <main class="wrap">
+  <div class="page-head"><div><div class="eyebrow">Sistema de gestión ciudadana</div><h2 id="welcome-title">PANEL DE PERSONAJE</h2><div class="muted">Información de rol, expedientes y activos registrados.</div></div><span class="pill green" id="connection-state">Conectando…</span></div>
+  <div class="stats"><div class="stat"><b id="stat-fines">—</b><span>Multas pendientes</span></div><div class="stat"><b id="stat-cars">—</b><span>Vehículos</span></div><div class="stat"><b id="stat-homes">—</b><span>Propiedades</span></div><div class="stat"><b id="stat-weapons">—</b><span>Armas registradas</span></div></div>
+  <nav class="tabs" id="tabs">
+   <button class="tab active" data-tab="profile">Mi expediente</button><button class="tab" data-tab="vehicles">Vehículos</button><button class="tab" data-tab="properties">Propiedades</button><button class="tab" data-tab="weapons">Armas</button><button class="tab" data-tab="fines">Multas</button><button class="tab police-only hidden" data-tab="police">PDA policial</button>
+  </nav>
+  <div id="view"></div>
+  <div class="footerline"><span>BOTÁNICOS RP · PDA de roleplay</span><span>Datos visibles según permisos de tu cuenta.</span></div>
+ </main>
+</section>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-storage-compat.js"></script>
+<script>
+/* Firebase Console > Project settings > Your apps > SDK setup.
+   Solo usa la configuración web pública. Nunca pongas claves privadas de Admin SDK aquí. */
+const firebaseConfig = {
+  apiKey: "AIzaSyD4HmbpwZnENVfACdIyWYGTaqoOccnpiNM",
+  authDomain: "botanicos-rp-t2-pda.firebaseapp.com",
+  projectId: "botanicos-rp-t2-pda",
+  storageBucket: "botanicos-rp-t2-pda.firebasestorage.app",
+  messagingSenderId: "843428427723",
+  appId: "1:843428427723:web:7eb7841dca8ecf9389684e",
+  measurementId: "G-1BJQ9LZMR6"
+};
+let app=null, auth=null, db=null, storage=null, session=null, me=null, profile=null, currentTab="profile";
+let cached={fines:[],vehicles:[],properties:[],weapons:[]};
+const $=id=>document.getElementById(id);
+function configured(){return firebaseConfig.apiKey.startsWith("AIza")&&!firebaseConfig.apiKey.includes("PEGA_AQUI")&&!firebaseConfig.projectId.includes("PEGA_AQUI")&&!firebaseConfig.appId.includes("PEGA_AQUI")}
+function showLanding(){$('landing').classList.remove('hidden');$('auth').classList.add('hidden');$('app').classList.add('hidden')}
+function showAuth(mode){$('landing').classList.add('hidden');$('app').classList.add('hidden');$('auth').classList.remove('hidden');const signup=mode==='signup';$('auth-title').textContent=signup?'CREAR CUENTA':'INICIAR SESIÓN';$('auth-desc').textContent=signup?'Crea tu acceso y registra el nombre de tu personaje.':'Entra a tu expediente de personaje.';$('signup-fields').classList.toggle('hidden',!signup);$('character-name').required=signup;$('auth-submit').textContent=signup?'CREAR CUENTA':'ENTRAR';$('auth-message').classList.add('hidden');$('auth-form').dataset.mode=mode}
+function message(el,text,success=false){el.textContent=text;el.classList.remove('hidden','success');if(success)el.classList.add('success')}
+function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function money(n){return new Intl.NumberFormat('es-MX',{style:'currency',currency:'MXN',maximumFractionDigits:0}).format(Number(n||0))}
+function date(v){if(!v)return '—';const d=v.toDate?v.toDate():new Date(v);return d.toLocaleDateString('es-MX')}
+function stamp(){return firebase.firestore.FieldValue.serverTimestamp()}
+async function init(){
+ if(!configured()){$('connection-state').textContent='Falta configurar Firebase';$('connection-state').classList.remove('green');return}
+ try{app=firebase.initializeApp(firebaseConfig);auth=firebase.auth();db=firebase.firestore();storage=firebase.storage();
+  auth.onAuthStateChanged(async user=>{session=user;if(user){await loadApp()}else{me=null;profile=null;showLanding()}});
+ }catch(err){$('connection-state').textContent='Error Firebase';console.error(err)}
+}
+$('auth-form').addEventListener('submit',async e=>{
+ e.preventDefault();if(!configured()){message($('auth-message'),'Primero configura firebaseConfig en index.html, crea Firestore y aplica firestore.rules y storage.rules.');return}
+ const mode=e.currentTarget.dataset.mode,email=$('auth-email').value.trim(),password=$('auth-password').value;
+ $('auth-submit').disabled=true;
+ try{
+  if(mode==='signup'){
+   const character=$('character-name').value.trim();if(!character)throw new Error('Escribe el nombre del personaje.');
+   const cred=await auth.createUserWithEmailAndPassword(email,password);
+   await cred.user.updateProfile({displayName:character});
+   await db.collection('profiles').doc(cred.user.uid).set({character_name:character,discord_id:$('discord-id').value.trim()||null,role:'citizen',created_at:stamp(),phone:null,occupation:null,notes:null});
+   message($('auth-message'),'Cuenta creada. Abriendo tu expediente…',true);await loadApp();
+  }else{await auth.signInWithEmailAndPassword(email,password);await loadApp()}
+ }catch(err){message($('auth-message'),friendlyError(err))}
+ finally{$('auth-submit').disabled=false}
+});
+function friendlyError(err){const map={'auth/email-already-in-use':'Ese correo ya tiene una cuenta.','auth/invalid-email':'El correo no es válido.','auth/weak-password':'La contraseña debe tener al menos 6 caracteres según Firebase. Usa una contraseña más larga.','auth/invalid-credential':'Correo o contraseña incorrectos.','auth/network-request-failed':'Error de conexión. Inténtalo de nuevo.'};return map[err.code]||err.message||'No se pudo completar el acceso.'}
+async function signOut(){if(auth)await auth.signOut();showLanding()}
+async function loadApp(){
+ if(!db||!session)return;me=session;
+ $('landing').classList.add('hidden');$('auth').classList.add('hidden');$('app').classList.remove('hidden');
+ $('connection-state').textContent='Conectado a Firebase';$('connection-state').classList.add('green');
+ $('nav-user').textContent=session.email||'Usuario';
+ try{
+  const ref=db.collection('profiles').doc(me.uid);let snap=await ref.get();
+  if(!snap.exists){await ref.set({character_name:me.displayName||'Personaje nuevo',discord_id:null,role:'citizen',created_at:stamp(),phone:null,occupation:null,notes:null});snap=await ref.get()}
+  profile={id:snap.id,...snap.data()};
+  const isPolice=['police','admin'].includes(profile.role);
+  $('nav-role').textContent=profile.role==='admin'?'Administrador':isPolice?'Policía':'Ciudadano';
+  document.querySelectorAll('.police-only').forEach(x=>x.classList.toggle('hidden',!isPolice));
+  $('welcome-title').textContent=(profile.character_name||'MI PERSONAJE').toUpperCase();
+  await refreshData();renderTab(currentTab);
+ }catch(err){$('connection-state').textContent='Revisa reglas Firebase';$('view').innerHTML=`<div class="notice">No se pudo cargar el perfil: ${esc(err.message)}<br>Verifica que publicaste las reglas de Firestore y Storage.</div>`}
+}
+async function getRows(collection, ownerField='owner_id'){
+ let q=db.collection(collection);
+ if(!['police','admin'].includes(profile?.role))q=q.where(ownerField,'==',me.uid);
+ const snap=await q.get();return snap.docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>((b.created_at?.seconds||0)-(a.created_at?.seconds||0)));
+}
+async function refreshData(){
+ [cached.fines,cached.vehicles,cached.properties,cached.weapons]=await Promise.all([
+  getRows('fines','citizen_id'),getRows('vehicles'),getRows('properties'),getRows('weapons')]);
+ $('stat-fines').textContent=cached.fines.filter(x=>!x.paid).length;$('stat-cars').textContent=cached.vehicles.length;$('stat-homes').textContent=cached.properties.length;$('stat-weapons').textContent=cached.weapons.length;
+}
+$('tabs').addEventListener('click',e=>{const b=e.target.closest('[data-tab]');if(!b)return;currentTab=b.dataset.tab;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===b));renderTab(currentTab)});
+function table(rows,cols){if(!rows.length)return '<div class="empty">No hay registros todavía.</div>';return `<div class="table-wrap"><table><thead><tr>${cols.map(c=>`<th>${esc(c.label)}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${cols.map(c=>`<td>${c.render?c.render(r):esc(r[c.key]??'—')}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`}
+function renderTab(tab){
+ const isPolice=['police','admin'].includes(profile?.role);
+ if(tab==='police'&&!isPolice){currentTab='profile';return renderTab('profile')}
+ const name=esc(profile?.character_name||'Personaje');let html='';
+ if(tab==='profile')html=`<div class="grid"><section class="card span-8"><div class="profile-head"><img class="avatar" src="assets/botanicos-rp.png" alt=""><div><span class="pill">${esc(profile?.role||'citizen')}</span><h3>${name}</h3><div class="muted tiny">ID de cuenta: ${esc(me?.uid||'').slice(0,8)} · Alta: ${date(profile?.created_at)}</div></div></div><hr style="border:0;border-top:1px solid var(--line);margin:22px 0"><h3>Información del personaje</h3><form id="profile-form"><div class="form-grid"><div class="field"><label>Nombre del personaje</label><input name="character_name" maxlength="60" required value="${esc(profile?.character_name)}"></div><div class="field"><label>ID de Discord</label><input name="discord_id" maxlength="80" value="${esc(profile?.discord_id)}"></div><div class="field"><label>Teléfono IC</label><input name="phone" maxlength="30" value="${esc(profile?.phone)}"></div><div class="field"><label>Ocupación IC</label><input name="occupation" maxlength="80" value="${esc(profile?.occupation)}"></div><div class="field full"><label>Notas del personaje</label><textarea name="notes" maxlength="1000">${esc(profile?.notes)}</textarea></div></div><button class="btn btn-primary">GUARDAR PERFIL</button><span id="profile-msg" class="muted tiny" style="margin-left:10px"></span></form></section><section class="card span-4"><h3>Acceso y privacidad</h3><p class="muted tiny">Tu expediente está vinculado a tu cuenta. Las multas, vehículos, propiedades y armas son registros de roleplay.</p><div class="notice">La ciudadanía no puede crear ni editar multas policiales. Los permisos se validan en Firebase Security Rules.</div></section><section class="card span-12"><h3>Últimas multas</h3>${table(cached.fines.slice(0,5),[{label:'Fecha',render:r=>date(r.created_at)},{label:'Motivo',key:'reason'},{label:'Importe',render:r=>money(r.amount)},{label:'Estado',render:r=>`<span class="pill ${r.paid?'green':'red'}">${r.paid?'Pagada':'Pendiente'}</span>`}])}</section></div>`;
+ if(tab==='vehicles')html=`<div class="card"><h3>Vehículos registrados</h3>${table(cached.vehicles,[{label:'Modelo',key:'model'},{label:'Matrícula',key:'plate'},{label:'Color',key:'color'},{label:'Estado',key:'status'},{label:'Registro',render:r=>date(r.created_at)}])}<form id="vehicle-form" class="form-grid" style="margin-top:20px"><div class="field"><label>Modelo</label><input name="model" required maxlength="80"></div><div class="field"><label>Matrícula</label><input name="plate" required maxlength="20"></div><div class="field"><label>Color</label><input name="color" maxlength="40"></div><div class="field"><label>Estado</label><select name="status"><option>Registrado</option><option>En depósito</option><option>Robado</option></select></div><div class="full"><button class="btn btn-primary">AÑADIR VEHÍCULO</button></div></form><p id="vehicle-msg" class="muted tiny"></p></div>`;
+ if(tab==='properties')html=`<div class="card"><h3>Propiedades</h3>${table(cached.properties,[{label:'Dirección',key:'address'},{label:'Tipo',key:'property_type'},{label:'Estado',key:'status'},{label:'Registro',render:r=>date(r.created_at)}])}<form id="property-form" class="form-grid" style="margin-top:20px"><div class="field"><label>Dirección IC</label><input name="address" required maxlength="140"></div><div class="field"><label>Tipo de propiedad</label><select name="property_type"><option>Casa</option><option>Departamento</option><option>Negocio</option><option>Garaje</option><option>Otro</option></select></div><div class="field"><label>Estado</label><select name="status"><option>Registrada</option><option>En venta</option><option>Incautada</option></select></div><div class="full"><button class="btn btn-primary">AÑADIR PROPIEDAD</button></div></form><p id="property-msg" class="muted tiny"></p></div>`;
+ if(tab==='weapons')html=`<div class="card"><h3>Armas registradas</h3><div class="notice">Registros ficticios de inventario para roleplay.</div>${table(cached.weapons,[{label:'Tipo / modelo',key:'weapon_name'},{label:'Número de serie',key:'serial_number'},{label:'Licencia',key:'license_status'},{label:'Estado',key:'status'}])}<form id="weapon-form" class="form-grid" style="margin-top:20px"><div class="field"><label>Tipo / modelo</label><input name="weapon_name" required maxlength="80"></div><div class="field"><label>Número de serie</label><input name="serial_number" maxlength="80"></div><div class="field"><label>Licencia</label><select name="license_status"><option>Sin verificar</option><option>Vigente</option><option>Vencida</option><option>No aplica</option></select></div><div class="field"><label>Estado</label><select name="status"><option>Registrada</option><option>Incautada</option><option>Extraviada</option></select></div><div class="full"><button class="btn btn-primary">REGISTRAR ARMA IC</button></div></form><p id="weapon-msg" class="muted tiny"></p></div>`;
+ if(tab==='fines')html=`<div class="card"><h3>Historial de multas</h3>${table(cached.fines,[{label:'Fecha',render:r=>date(r.created_at)},{label:'Motivo',key:'reason'},{label:'Importe',render:r=>money(r.amount)},{label:'Oficial',render:r=>esc(r.officer_name||'—')},{label:'Estado',render:r=>`<span class="pill ${r.paid?'green':'red'}">${r.paid?'Pagada':'Pendiente'}</span>`}])}</div>`;
+ if(tab==='police')html=`<div class="grid"><section class="card span-6"><h3>Emitir multa</h3><p class="muted tiny">Solo policías y administradores pueden crear multas; Firebase Security Rules valida el permiso.</p><form id="fine-form"><div class="field"><label>Personaje detenido / multado</label><select name="citizen_id" id="citizen-select" required><option value="">Cargando ciudadanos…</option></select></div><div class="field"><label>Motivo / infracción</label><input name="reason" required maxlength="300" placeholder="Ej. Exceso de velocidad"></div><div class="field"><label>Importe en moneda IC</label><input name="amount" type="number" min="1" max="100000000" required></div><div class="field"><label>Observaciones</label><textarea name="notes" maxlength="1000"></textarea></div><button class="btn btn-primary">REGISTRAR MULTA</button></form><p id="fine-msg" class="muted tiny"></p></section><section class="card span-6"><h3>Fotografía del detenido</h3><p class="muted tiny">Fotos privadas en Firebase Storage, solo para policías y administradores.</p><form id="photo-form"><div class="field"><label>Ciudadano</label><select name="citizen_id" id="photo-citizen-select" required><option value="">Cargando ciudadanos…</option></select></div><div class="field"><label>Fotografía (JPG/PNG/WebP, máximo 5 MB)</label><input type="file" name="photo" accept="image/jpeg,image/png,image/webp" required></div><div class="field"><label>Descripción</label><input name="caption" maxlength="200"></div><button class="btn btn-primary">SUBIR FOTO AL EXPEDIENTE</button></form><p id="photo-msg" class="muted tiny"></p></section><section class="card span-12"><h3>Multas recientes</h3><div id="police-fines">${table(cached.fines,[{label:'Fecha',render:r=>date(r.created_at)},{label:'Ciudadano',key:'citizen_name'},{label:'Motivo',key:'reason'},{label:'Importe',render:r=>money(r.amount)},{label:'Oficial',key:'officer_name'}])}</div></section><section class="card span-12"><h3>Buscar expediente</h3><div class="field"><label>Nombre del personaje</label><input id="citizen-search" placeholder="Buscar por nombre…"></div><div id="citizen-results" class="list"><div class="empty">Escribe para buscar ciudadanos.</div></div></section></div>`;
+ $('view').innerHTML=html;
+ if(tab==='profile')$('profile-form').addEventListener('submit',saveProfile);
+ if(tab==='vehicles')bindAdd('vehicle-form','vehicles','vehicle-msg',['model','plate','color','status']);
+ if(tab==='properties')bindAdd('property-form','properties','property-msg',['address','property_type','status']);
+ if(tab==='weapons')bindAdd('weapon-form','weapons','weapon-msg',['weapon_name','serial_number','license_status','status']);
+ if(tab==='police')setupPolice();
+}
+async function saveProfile(e){e.preventDefault();const f=new FormData(e.target),patch={};['character_name','discord_id','phone','occupation','notes'].forEach(k=>patch[k]=(f.get(k)||'').trim()||null);try{await db.collection('profiles').doc(me.uid).update(patch);profile={...profile,...patch};$('profile-msg').textContent='Perfil guardado.';$('welcome-title').textContent=profile.character_name.toUpperCase()}catch(err){$('profile-msg').textContent=err.message}}
+function bindAdd(formId,collection,msgId,fields){$(formId).addEventListener('submit',async e=>{e.preventDefault();const fd=new FormData(e.target),row={owner_id:me.uid,created_at:stamp()};fields.forEach(k=>row[k]=(fd.get(k)||'').trim()||null);try{await db.collection(collection).add(row);$(msgId).textContent='Registro añadido.';await refreshData();renderTab(currentTab)}catch(err){$(msgId).textContent=err.message}})}
+async function setupPolice(){
+ try{
+  const snap=await db.collection('profiles').get(),citizens=snap.docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>(a.character_name||'').localeCompare(b.character_name||''));
+  const options='<option value="">Seleccionar personaje…</option>'+citizens.map(c=>`<option value="${esc(c.id)}">${esc(c.character_name)}</option>`).join('');
+  $('citizen-select').innerHTML=options;$('photo-citizen-select').innerHTML=options;
+  $('citizen-search').addEventListener('input',()=>{const q=$('citizen-search').value.toLowerCase();const found=citizens.filter(c=>(c.character_name||'').toLowerCase().includes(q)).slice(0,30);$('citizen-results').innerHTML=found.length?found.map(c=>`<div class="list-item"><div><strong>${esc(c.character_name)}</strong><span class="muted tiny">ID: ${esc(c.id.slice(0,8))}</span></div><button class="btn btn-small" onclick="viewCitizen('${esc(c.id)}')">VER EXPEDIENTE</button></div>`).join(''):'<div class="empty">Sin resultados.</div>'});
+  $('fine-form').addEventListener('submit',async e=>{e.preventDefault();const fd=new FormData(e.target),cid=fd.get('citizen_id'),citizen=citizens.find(c=>c.id===cid);try{await db.collection('fines').add({citizen_id:cid,citizen_name:citizen?.character_name||'Personaje',reason:fd.get('reason').trim(),amount:Number(fd.get('amount')),notes:fd.get('notes').trim()||null,officer_id:me.uid,officer_name:profile.character_name,paid:false,created_at:stamp()});$('fine-msg').textContent='Multa registrada correctamente.';await refreshData();renderTab('police')}catch(err){$('fine-msg').textContent=err.message}});
+  $('photo-form').addEventListener('submit',uploadPhoto);
+ }catch(err){$('fine-msg').textContent='Error cargando ciudadanos: '+err.message}
+}
+async function uploadPhoto(e){
+ e.preventDefault();const fd=new FormData(e.target),file=fd.get('photo'),cid=fd.get('citizen_id');if(!file||!file.size)return;
+ if(file.size>5*1024*1024){$('photo-msg').textContent='La imagen supera el límite de 5 MB.';return}
+ if(!['image/jpeg','image/png','image/webp'].includes(file.type)){$('photo-msg').textContent='Formato no permitido. Usa JPG, PNG o WebP.';return}
+ try{const safe=file.name.replace(/[^a-zA-Z0-9._-]/g,'_'),path=`detained-photos/${cid}/${Date.now()}-${safe}`;const ref=storage.ref(path);await ref.put(file,{contentType:file.type});await db.collection('detained_photos').add({citizen_id:cid,storage_path:path,caption:(fd.get('caption')||'').trim()||null,uploaded_by:me.uid,created_at:stamp()});$('photo-msg').textContent='Fotografía guardada en el expediente privado.';e.target.reset()}catch(err){$('photo-msg').textContent='No se pudo subir: '+err.message}
+}
+async function viewCitizen(id){
+ try{
+  const ps=await db.collection('profiles').doc(id).get();if(!ps.exists)throw new Error('Expediente no encontrado');const p={id:ps.id,...ps.data()};
+  const queries=await Promise.all([db.collection('fines').where('citizen_id','==',id).get(),db.collection('vehicles').where('owner_id','==',id).get(),db.collection('properties').where('owner_id','==',id).get(),db.collection('weapons').where('owner_id','==',id).get(),db.collection('detained_photos').where('citizen_id','==',id).get()]);
+  const unpack=s=>s.docs.map(d=>({id:d.id,...d.data()}));const [f,v,h,w,photos]=queries.map(unpack);
+  let photoHtml='<div class="empty">Sin fotografías.</div>';if(photos.length){photoHtml='<div class="list">'+(await Promise.all(photos.map(async ph=>{try{const url=await storage.ref(ph.storage_path).getDownloadURL();return `<div class="list-item"><div><strong>${esc(ph.caption||'Foto de expediente')}</strong><span class="muted tiny">${date(ph.created_at)}</span></div><a target="_blank" rel="noopener" href="${esc(url)}">Ver foto</a></div>`}catch{return '<div class="list-item">Foto no disponible</div>'}}))).join('')+'</div>'}
+  $('citizen-results').innerHTML=`<div class="card"><div class="profile-head"><img class="avatar" src="assets/botanicos-rp.png"><div><span class="pill red">Expediente policial</span><h3>${esc(p.character_name)}</h3><div class="muted tiny">${esc(p.phone||'Sin teléfono IC')} · ${esc(p.occupation||'Sin ocupación registrada')}</div></div></div><h3 style="margin-top:22px">Multas</h3>${table(f,[{label:'Fecha',render:r=>date(r.created_at)},{label:'Motivo',key:'reason'},{label:'Importe',render:r=>money(r.amount)},{label:'Estado',render:r=>r.paid?'Pagada':'Pendiente'}])}<h3 style="margin-top:22px">Vehículos</h3>${table(v,[{label:'Modelo',key:'model'},{label:'Matrícula',key:'plate'}])}<h3 style="margin-top:22px">Propiedades</h3>${table(h,[{label:'Dirección',key:'address'},{label:'Tipo',key:'property_type'}])}<h3 style="margin-top:22px">Armas registradas</h3>${table(w,[{label:'Modelo',key:'weapon_name'},{label:'Licencia',key:'license_status'}])}<h3 style="margin-top:22px">Fotografías del detenido</h3>${photoHtml}</div>`;
+ }catch(err){$('citizen-results').innerHTML=`<div class="notice">No se pudo abrir el expediente: ${esc(err.message)}</div>`}
+}
+showLanding();init();
+</script>
+</body></html>
